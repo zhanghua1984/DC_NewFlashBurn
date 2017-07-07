@@ -1,0 +1,247 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (P.R.C.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\NEWFLASHBURN.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.chs\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\NEWFLASHBURN.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 235, 55
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于 NEWFLASHBURN"
+FONT 9, "宋体"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "NEWFLASHBURN 1.0 版",IDC_STATIC,40,10,119,8,SS_NOPREFIX
+    LTEXT           "版权所有 (C) 2013",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "确定",IDOK,178,7,50,14,WS_GROUP
+END
+
+IDD_NEWFLASHBURN_DIALOG DIALOGEX 0, 0, 591, 421
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "NEWFLASHBURN"
+FONT 9, "宋体"
+BEGIN
+    LTEXT           "串口号: ",IDC_STATIC,19,23,32,8
+    COMBOBOX        IDC_COMBOCOMPORTNUMBER,53,21,38,61,CBS_DROPDOWN | 
+                    CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "关闭串口",IDC_CLOSEOROPEN,110,21,55,15
+    LTEXT           "配置文件(*.con):",IDC_STATIC,17,49,67,9
+    LTEXT           "地理数据(*.geo):",IDC_STATIC,16,65,67,9
+    EDITTEXT        IDC_CONFIGPATH,86,48,387,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_GEOPATH,86,63,387,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "Browse",IDC_BUTTONSELECTCON,484,45,78,14
+    PUSHBUTTON      "Browse",IDC_BUTTONSELECTGEO,484,63,78,14
+    LTEXT           "起始地址:",IDC_STATIC,197,21,39,10
+    EDITTEXT        IDC_STARTADDR,243,19,73,12,ES_AUTOHSCROLL
+    LTEXT           "目标板:",IDC_STATIC,336,20,30,10
+    COMBOBOX        IDC_COMBOTARGETBOARD,373,19,58,73,CBS_DROPDOWN | 
+                    CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    DEFPUSHBUTTON   "发送",IDC_BUTTONSEND,484,107,78,70
+    EDITTEXT        IDC_RXCOUNTER,484,200,78,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDITRXLENTH,484,227,78,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDITRXVALUE,484,252,78,12,ES_AUTOHSCROLL
+    CONTROL         "Progress1",IDC_PROGRESSPERSENT,"msctls_progress32",
+                    PBS_SMOOTH | WS_BORDER,28,84,442,14
+    LTEXT           "%0",IDC_STATICPERSENT,477,85,32,9
+    LTEXT           "RX:",IDC_STATIC,484,187,17,8
+    LTEXT           "RX ONE:",IDC_STATIC,484,216,36,8
+    LTEXT           "TX:",IDC_STATIC,485,241,17,8
+    LTEXT           "计时:",IDC_STATIC,487,276,23,8
+    EDITTEXT        IDC_EDITCOUNTERSECOND,514,275,45,12,ES_AUTOHSCROLL | 
+                    ES_READONLY | ES_NUMBER | NOT WS_BORDER
+    PUSHBUTTON      "台式机串口",IDC_BUTTONSPEED,483,303,79,28
+    CONTROL         "",IDC_RICHEDITSHOWMSG,"RICHEDIT",ES_MULTILINE | 
+                    ES_AUTOVSCROLL | WS_BORDER | WS_VSCROLL | WS_TABSTOP,28,
+                    335,441,72
+    CONTROL         "",IDC_RICHEDITRX,"RICHEDIT",ES_MULTILINE | WS_BORDER | 
+                    WS_VSCROLL | WS_TABSTOP,254,104,215,223
+    CONTROL         "",IDC_RICHEDITTX,"RICHEDIT",ES_MULTILINE | WS_BORDER | 
+                    WS_VSCROLL | WS_TABSTOP,28,104,215,223
+    PUSHBUTTON      "清空发送",IDC_BUTTONCLEARTX,483,341,79,14
+    PUSHBUTTON      "清空接收",IDC_BUTTONCLEARRX,483,358,79,14
+    PUSHBUTTON      "清空信息",IDC_BUTTONCLEARINFO,483,375,79,14
+    PUSHBUTTON      "清空所有",IDC_BUTTONCLEARALL,483,392,79,14
+    LTEXT           "注意:稍写MPM时先选择目标板!",IDC_STATIC,456,15,116,8
+    LTEXT           "双头线MPM和TCM通用",IDC_STATIC,455,27,111,9
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x29L
+#else
+ FILEFLAGS 0x28L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404b0"
+        BEGIN
+            VALUE "Comments", "数据发送\0"
+            VALUE "CompanyName", "北京 大成通号轨道交通设备有限公司\0"
+            VALUE "FileDescription", "FLASHBURN 配置数据地理数据烧写程序\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "NEWFLASHBURN 1.0\0"
+            VALUE "LegalCopyright", "版权所有 (C) 2013 07 03\0"
+            VALUE "LegalTrademarks", "张华\0"
+            VALUE "OriginalFilename", "NEWFLASHBURN.EXE\0"
+            VALUE "PrivateBuild", "张华\0"
+            VALUE "ProductName", "数据烧写程序\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+            VALUE "SpecialBuild", "张华\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_NEWFLASHBURN_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 584
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 414
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ABOUTBOX            "关于 NEWFLASHBURN(&A)..."
+END
+
+#endif    // Chinese (P.R.C.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE 4, 2
+#pragma code_page(936)
+#endif //_WIN32
+#include "res\NEWFLASHBURN.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.chs\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
